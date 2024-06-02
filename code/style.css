@@ -69,19 +69,19 @@ header {
 
 .sec {
     position: relative;
-    background: #003329;
+    background: #e6e5da;
     padding: 100px;
 }
 
 .sec h2 {
     font-size: 3em;
-    color: #fff;
+    color: #000000;
     margin-buttom: 10px;
 }
 
 .sec p {
     font-size: 1em;
-    color: #fff;
+    color: #000000;
     font-weight: 300;
 }
 
