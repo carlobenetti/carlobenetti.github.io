@@ -1,0 +1,90 @@
+@import 'compass/css3';
+
+@font-face {
+  src: url('https://assets.codepen.io/4175254/DIN2014-DemiBold.ttf') format('truetype');
+  font-family: 'DIN 2014';
+  font-weight: 600;
+}
+
+.button {
+    margin-right: 2em;
+    --bevel: 3px;
+    --border-width: 3px;
+    font-family: 'DIN 2014';
+    font-weight: 600;
+    color: #1d2119;
+    min-width: 10em;
+  }
+
+  .button:last-child {
+    margin-right: 0;
+  }
+  
+  
+  
+  
+  .button-inside {
+    --padding-vertical: 6px;
+    display: block;
+    padding: var(--padding-vertical) 24px calc(var(--padding-vertical) - .125em);
+    background-color: #fff;
+    clip-path: polygon(
+      var(--bevel) 0,
+      calc(100% - var(--bevel)) 0,
+      100% var(--bevel),
+      100% calc(100% - var(--bevel)),
+      calc(100% - var(--bevel)) 100%,
+      var(--bevel) 100%,
+      0 calc(100% - var(--bevel)),
+      0 var(--bevel)
+    );
+    text-align: center;
+    transition-property: transform;
+    transition-duration: .2s;
+    
+    .button:hover:not(:active) &,
+    .button:focus-visible:not(:active) & {
+      transform: translate(calc(var(--border-width) * -1), calc(var(--border-width) * -1));
+    }
+    
+    .button:hover &,
+    .button:focus-visible & {
+      background-color: #fcd200;
+      background-image: 
+        linear-gradient(to right, transparent, rgba(252, 210, 0, .9)),
+        radial-gradient(#fff60d 1px, transparent 0),
+        radial-gradient(#fff60d 1px, transparent 0);
+      background-size: auto, 6px 6px, 6px 6px;
+      background-position: 0 0, 0 0, 3px 3px;
+      animation: scroll-background 1s linear infinite;
+    }
+  }
+  
+  @keyframes scroll-background {
+    to {
+      background-position-x: 0, -6px, -3px;
+    }
+  }
+  
+  .button-text-characters-container {
+    display: inline-block;
+    transform: skewX(-6deg);
+  }
+  
+  .button-text-character {
+    display: inline-block;
+    
+    .button:hover:not(:active) &,
+    .button:focus-visible:not(:active) & {
+      animation: jump 4s cubic-bezier(.75, .25, 1, 2) var(--delay) infinite;
+    }
+  }
+  
+  @keyframes jump {
+    5% {
+      transform: translateY(-.125em);
+    }
+    10% {
+      transform: translateY(0);   
+    }
+  }

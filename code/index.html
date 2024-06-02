@@ -7,20 +7,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Parallax Scrolling Website | Codehal</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="button.css">
+
 </head>
 
 <body>
     <header>
         <h2 class="logo">Logo</h2>
         <nav class="navigation">
-            <a href="#">Home</a>
-            <a href="#">Contact</a>
+            
+            <button class="button" type="button">
+              <span class="button-inside">
+                <a href="#">Home</a>
+              </span>
+              </button>
+            <button class="button" type="button">
+              <span class="button-inside">
+                <a href="#">Carlo</a>
+              </span>
+              </button>
         </nav>
     </header>
 
     <section class="parallax">
         <img src="/images/background.png" id="background">
-        <img src="/images/tree.png" id="tree">
         <h2 id="text">Front-end Developer</h2>
         <img src="/images/plant.png" id="plant">
         <img src="/images/leaf.png" id="leaf">
@@ -37,6 +47,7 @@
     </section>
 
     <script src="script.js"></script>
+    <script src="buttonScript.js"></script>
 </body>
 
 </html>

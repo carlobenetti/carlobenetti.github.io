@@ -37,18 +37,11 @@ header {
 
 .navigation a {
     text-decoration: none;
-    color: #359381;
-    padding: 6px 15px;
-    border-radius: 20px;
-    margin: 0 10px;
+    color: black;
     font-weight: 600;
 }
 
-.navigation a:hover, 
-.navigation a.active {
-    background: #359381;
-    color: #fff;
-}
+
 
 
 .parallax {
@@ -91,3 +84,4 @@ header {
     color: #fff;
     font-weight: 300;
 }
+
