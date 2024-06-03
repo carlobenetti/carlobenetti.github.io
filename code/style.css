@@ -95,7 +95,7 @@ header {
     position: relative;
     background: #e6e5da;
     padding: 100px;
-    height: 100%;
+    height: auto;
     overflow: hidden;
 }
 
