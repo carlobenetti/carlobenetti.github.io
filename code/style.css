@@ -9,7 +9,7 @@
 
 
 body {
-    background: #f9f9f9;
+    background: #e6e5da;
     min-height: 100vh;
     overflow-x: hidden; 
 }
@@ -19,7 +19,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 10px 100px;
+    padding: 5px 20px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -27,6 +27,8 @@ header {
     background-color: rgba(255, 255, 255, .15);  
     backdrop-filter: blur(5px);
 }
+
+
 
 .logo {
     font-size: 2em;
@@ -52,10 +54,32 @@ header {
     height: 100vh;
 }
 
+
+
+#tagName {
+    position: absolute;
+    top: 140px;
+    left: 0;
+    font-size: 2em;
+    color: #000000;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+}
+
 #text {
     position: absolute;
+    top: 150px;
+    left: 0;
     font-size: 5em;
-    color: #000000;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+}
+
+#text2 {
+    position: absolute;
+    top: 220px;
+    left: 0;
+    font-size: 5em;
+    color: #fff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
 }
 
@@ -71,6 +95,8 @@ header {
     position: relative;
     background: #e6e5da;
     padding: 100px;
+    height: 100%;
+    overflow: hidden;
 }
 
 .sec h2 {
@@ -83,5 +109,9 @@ header {
     font-size: 1em;
     color: #000000;
     font-weight: 300;
+}
+
+.sec ul {
+    list-style-type: none;
 }
 
